@@ -39,6 +39,7 @@ jobs:
         with:
           repository: trans-archive/andai-tales
           path: andai-tales
+          fetch-depth: 0
 
       - name: 构建 andai-tales
         run: |
