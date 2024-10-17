@@ -15,6 +15,10 @@ const nav: NavConfig = [
     text: '关于',
     link: '/about/',
   },
+  {
+    text: '文学档案',
+    link: '/literature/',
+  },
 ]
 
 const baseConfig = {
@@ -39,12 +43,17 @@ const sidebarOptions = [
     scanStartPath: 'about',
     resolvePath: '/about/',
   },
-
+  {
+    ...baseConfig,
+    scanStartPath: 'literature',
+    resolvePath: '/literature/',
+  },
 ]
 
 const themeConfig: ThemeContext = {
   siteTitle: "Trans Archive!",
   siteDescription: "这里是简介",
+  org: 'Trans Archive!', // 这里用于设定版权区显示的组织名
   siteLogo: '/logo.png',
   // SiteTitle值为false时，logo位置不显示标题。未定义SiteTitle时，显示标题。SiteTitle值为abcd时，显示abcd。
     //   SiteTitle: false,
