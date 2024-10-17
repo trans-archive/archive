@@ -1,6 +1,7 @@
 name: 部署到 Cloudflare Pages
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'main'
@@ -14,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 检出代码
+      - name: 检出主仓库代码
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
@@ -33,7 +34,19 @@ jobs:
       - name: 构建项目
         run: pnpm build
 
-      # 第五步：安装 Wrangler
+      - name: 检出 andai-tales
+        uses: actions/checkout@v3
+        with:
+          repository: trans-archive/andai-tales
+          path: andai-tales
+
+      - name: 构建 andai-tales
+        run: |
+          cd andai-tales
+          pnpm install
+          pnpm update @project-trans/vitepress-theme-project-trans@prerelease
+          pnpm build
+
       - name: 安装 Wrangler
         run: pnpm add -g wrangler@3
 
@@ -44,3 +57,11 @@ jobs:
           accountId: ${{ secrets.CLOUDFLARE_PAGES_ACCOUNT }}
           projectName: trans-archive
           directory: docs/.vitepress/dist
+
+      - name: 发布 andai-tales
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_PAGES_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_PAGES_ACCOUNT }}
+          projectName: trans-archive
+          directory: andai-tales/docs/.vitepress/dist
