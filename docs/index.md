@@ -14,5 +14,8 @@ hero:
     - theme: brand
       text: 关于
       link: /about
+    - theme: alt
+      text: 文学档案
+      link: /literature
 
 ---
