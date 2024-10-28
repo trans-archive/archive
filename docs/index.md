@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Trans Archive!"
   text: "123456789"
-  tagline: "\nqwertyuiop"
+  tagline: "\n「秉烛而行，照亮文墨。」"
   image:
     src: /logo.png
     alt: logo
