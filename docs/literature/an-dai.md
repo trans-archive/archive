@@ -21,4 +21,4 @@ copyright:
 
 ### 在线观看
 
-[点击浏览](../andai-tales/)
+<a href="/andai-tales/" target="_blank">点击浏览</a>
