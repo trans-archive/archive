@@ -21,7 +21,10 @@ hero:
       text: 王安黛小说站
       link: /an-dai
     - theme: alt
-      text: 文学档案
+      text: 文学作品
       link: /literature
+    - theme: alt
+      text: 存档
+      link: /archive
 
 ---

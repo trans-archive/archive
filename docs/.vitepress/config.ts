@@ -20,8 +20,12 @@ const nav: NavConfig = [
     link: '/an-dai/',
   },
   {
-    text: '文学档案',
+    text: '文学作品',
     link: '/literature/',
+  },
+  {
+    text: '存档',
+    link: '/archive/',
   },
 ]
 
@@ -56,6 +60,11 @@ const sidebarOptions = [
     ...baseConfig,
     scanStartPath: 'literature',
     resolvePath: '/literature/',
+  },
+  {
+    ...baseConfig,
+    scanStartPath: 'archive',
+    resolvePath: '/archive/',
   },
 ]
 
