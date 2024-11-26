@@ -16,6 +16,10 @@ const nav: NavConfig = [
     link: '/about/',
   },
   {
+    text: '王安黛',
+    link: '/an-dai/',
+  },
+  {
     text: '文学档案',
     link: '/literature/',
   },
@@ -45,6 +49,11 @@ const sidebarOptions = [
   },
   {
     ...baseConfig,
+    scanStartPath: 'an-dai',
+    resolvePath: '/an-dai/',
+  },
+  {
+    ...baseConfig,
     scanStartPath: 'literature',
     resolvePath: '/literature/',
   },
@@ -52,7 +61,7 @@ const sidebarOptions = [
 
 const themeConfig: ThemeContext = {
   siteTitle: "Trans Archive!",
-  siteDescription: "这里是简介",
+  siteDescription: "一个多元性别相关内容档案库",
   org: 'Trans Archive!', // 这里用于设定版权区显示的组织名
   siteLogo: '/logo.png',
   // SiteTitle值为false时，logo位置不显示标题。未定义SiteTitle时，显示标题。SiteTitle值为abcd时，显示abcd。

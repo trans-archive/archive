@@ -34,25 +34,6 @@ jobs:
       - name: 构建项目
         run: pnpm build
 
-      - name: 检出 andai-tales
-        uses: actions/checkout@v3
-        with:
-          repository: trans-archive/andai-tales
-          path: andai-tales
-          fetch-depth: 0
-
-      - name: 构建 andai-tales
-        run: |
-          cd andai-tales
-          pnpm install
-          pnpm update @project-trans/vitepress-theme-project-trans@prerelease
-          pnpm build
-
-      - name: 将 andai-tales 移入主站
-        run: |
-          mkdir -p docs/.vitepress/dist/andai-tales
-          cp -r andai-tales/docs/.vitepress/dist/* docs/.vitepress/dist/andai-tales
-
       - name: 安装 Wrangler
         run: pnpm add -g wrangler@3
 
