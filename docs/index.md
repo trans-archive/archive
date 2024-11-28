@@ -7,7 +7,7 @@ hero:
   text: "一个多元性别相关内容档案库"
   tagline: "\n「秉烛而行，照亮文墨。」"
   image:
-    src: /logo.png
+    src: /logo.svg
     alt: logo
     style: "margin-top: 13%;"
   actions:

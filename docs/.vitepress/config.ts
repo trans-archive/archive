@@ -72,7 +72,7 @@ const themeConfig: ThemeContext = {
   siteTitle: "Trans Archive!",
   siteDescription: "一个多元性别相关内容档案库",
   org: 'Trans Archive!', // 这里用于设定版权区显示的组织名
-  siteLogo: '/logo.png',
+  siteLogo: '/logo.svg',
   // SiteTitle值为false时，logo位置不显示标题。未定义SiteTitle时，显示标题。SiteTitle值为abcd时，显示abcd。
     //   SiteTitle: false,
   /** Repo */
