@@ -13,7 +13,7 @@ hero:
   actions:
     - theme: brand
       text: 缺耳女
-      link: /an-dai/que-er-nv
+      link: /an-dai/que-er-nv/
     - theme: alt
       text: 返回主站
       link: /
