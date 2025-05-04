@@ -13,18 +13,18 @@ hero:
   actions:
     - theme: brand
       text: 关于
-      link: /about
+      link: /about/
     - theme: alt
       text: 药娘的天空
       link: https://transky.mtf.wiki
     - theme: alt
       text: 王安黛小说站
-      link: /an-dai
+      link: /an-dai/
     - theme: alt
       text: 文学作品
-      link: /literature
+      link: /literature/
     - theme: alt
       text: 存档
-      link: /archive
+      link: /archive/
 
 ---
